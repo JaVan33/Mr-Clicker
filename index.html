@@ -5,8 +5,12 @@
       .btn-click {height: 20%; width: 20%; background-color: gray;}
     </style>
     <script>
+      var clicks = 0
       function clicked() {
         clicks = clicks + 1;
+      }
+      function refresh() {
+        setInterval("location.reload()", 1000);
       }
     </script>
     <meta charset="UTF-8">
@@ -14,6 +18,7 @@
   <body>
     <header>
       <h1>Mr Clicker/h1>
+        <h3>Your clicks: <span id="clicks-sh"></span></h3>
     </header>
     <button onclick="clicked()" class="btn-click">Click on me</button>
   </body>
