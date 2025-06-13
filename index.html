@@ -1,13 +1,20 @@
 <html>
   <head>
     <title>Mr Clicker</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <style>
+      .btn-click {height: 20%; width: 20%; background-color: gray;}
+    </style>
+    <script>
+      function clicked() {
+        clicks = clicks + 1;
+      }
+    </script>
     <meta charset="UTF-8">
   </head>
   <body>
     <header>
       <h1>Mr Clicker/h1>
     </header>
+    <button onclick="clicked()" class="btn-click">Click on me</button>
   </body>
 </html>
